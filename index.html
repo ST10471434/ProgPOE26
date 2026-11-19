@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Chat App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="chat">
+    <header class="chat-header">
+      <div>
+        <h1>Chat with Sam</h1>
+        <p class="subtitle">Demo conversation with message status flags</p>
+      </div>
+      <button id="clear-btn" type="button" class="link-btn">Clear chat</button>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite"></section>
+
+    <form id="chat-form" class="composer" autocomplete="off">
+      <input id="message-input" type="text" placeholder="Type a message" maxlength="500" required>
+      <button type="submit">Send</button>
+    </form>
+
+    <footer class="legend">
+      <span><span class="tick">&#10003;</span> Sent</span>
+      <span><span class="tick">&#10003;&#10003;</span> Received</span>
+      <span><span class="tick read">&#10003;&#10003;</span> Read</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
